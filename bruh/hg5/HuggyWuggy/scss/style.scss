@@ -1,0 +1,399 @@
+@import '../scss/nullstyle';
+
+
+a {
+    color: black;
+}
+
+// ---------container--------------------------------------------
+
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+._container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__container {
+
+}
+
+.main__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;  
+}
+
+.about__container {
+}
+
+.shop__container {
+}
+
+.footer__container {
+}
+// ----header--------------------------------------------------
+
+
+$font_nerko: 'Nerko One', cursive;
+$font_kanit: 'Kanit', sans-serif;
+$font_oxygen: 'Oxygen', sans-serif;
+
+body {
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    min-width: 1224px;
+}
+
+.header__body {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+}
+
+.header__body button {
+    position: relative;
+    font-size: 32px;
+    height: 32px;
+    width: 192px;
+}
+
+
+
+.header__elements {
+
+}
+
+
+.header__logo {
+    font-size: 25px;
+    line-height: calc(36 / 25 * 100%);
+
+}
+
+.menu {
+    
+}
+.menu__items {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.menu__item {
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+.menu__item:last-child{
+    margin-right: 0px;
+}
+
+.menu__link {
+    color: red;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .header__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 60px;
+        align-items: center;
+        font-family: $font_nerko;
+        padding-top: 50px;
+    }
+    
+    
+    
+    .header__elements {
+    
+    }
+    
+    
+    .header__logo {
+        font-size: 25px;
+        line-height: calc(36 / 25 * 100%);
+    
+    }
+    
+    .menu {
+        
+    }
+    .menu__items {
+        display: flex;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        
+        
+    }
+    .menu__item {
+        font-size: 18px;
+        margin-right: 50px;
+    }
+    
+    .menu__item:last-child{
+        margin-right: 0px;
+    }
+    
+    .menu__link {
+        color: red;
+    }
+
+
+}
+
+// -----main-----------------------------------------
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.main__body {
+    background-image: url(../img/main__block/main__block_bcg.jpg);
+    background-repeat: no-repeat;
+}
+
+.main__2body {
+    background-image: url(../img/main__block/main__block_bcg2.jpeg);
+    background-repeat: no-repeat;
+    background-size: 600px;
+
+}
+
+
+.main__block {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px;
+    width: 650px;
+
+}
+
+.main__block > *:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.main__title {
+    color: red;
+    font-size: 46px;
+    line-height: calc(84 / 46 * 100%);
+}
+.main__text {
+    font-size: 26px;
+    line-height: calc(32 / 26 * 100%);
+    color: black;
+}
+
+.main__text:hover {
+    transition: 1s;
+    background-color: white;
+}
+
+
+.main_buttons {
+    display: flex;
+}
+.main__button {
+    width: 192px;
+    height: 60px;
+    border-radius: 22px;
+    font-size: 22px;
+
+}
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+
+// --------about-us-------------------------------------
+
+.about {
+    font-family: $font_oxygen;
+}
+
+
+
+.about__body { 
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.about__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: blue;
+    color: red;
+    font-size: 24px;
+}
+
+.card {
+    background-color: red;
+    color: blue;
+}
+
+.about__card > *:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.about__card-img {
+    position: relative;
+    width: 250px;
+    height: 300px;
+}
+
+
+
+.about__title {
+    font-size: 50px;
+    line-height: calc(62 / 50 * 100%);
+}   
+.about__text {
+    font-size: 26px;
+    line-height: calc(32 / 26 * 100%);
+}
+
+.about__button {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.about__link {
+    font-size: 26px;
+    line-height: calc(32 / 26 * 100%);
+}
+
+
+// -----shop__card-----------------------------------------------
+
+.shop {
+    padding: 20px;
+}
+
+.shop__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+
+.shop__card {
+    padding: 20px;
+    margin: 100px;
+    flex: 1, 0, auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid ;
+    border-radius: 15px;
+    box-shadow: 0px 0px 102px -21px rgba(214,101,214,1);
+    width: 400px;
+
+}
+
+
+.shop__title {
+    font-size: 50px;
+
+}
+.shop__text {
+    font-size: 26px;
+    line-height: calc(26 / 20 * 100%);
+    margin: 10px 0px;
+}
+
+
+
+.shop__button {
+    border-radius: 15px;
+    background-color: red;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+
+}
+
+// ------footer-----------------------------------
+
+.footer {
+}
+
+
+.footer__body {
+    display: flex;
+    text-align: center;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    min-width: 100%;
+
+}
+
+.footer__end {
+
+}
+
+
+.footer__line {
+    width: 330px;
+    height: 3px;
+    background-color: black;
+}
+
+
+.footer__text {
+    font-size: 32px;
+    line-height: calc(42 / 32 * 100%);
+}
+
+
+.footer__text::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.footer__text::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+

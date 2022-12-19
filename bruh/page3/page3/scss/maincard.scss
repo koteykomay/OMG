@@ -1,0 +1,94 @@
+ul li{list-style: none;}
+a,a:visited{text-decoration: none; color: white;}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 600px;
+    font-size: 26px;
+    min-width: 1124px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: grey;
+    margin-top: 100px;
+    width: 700px;
+    height: 6s00px;
+}
+
+.card > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 400px;
+    
+}
+
+.card div a {
+    color: black;
+    font-weight: 500;
+}
+
+.card img {
+    width: 300px;
+    height: 200px;
+    margin: 20px 0px;
+}
+
+.block2  {
+    margin-top: -100px;
+}
+
+
+.card button {
+    width: 192px;
+    height: 32px;
+    transition: 2s;
+    
+}
+
+
+.card button:hover {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    border-bottom: 20px solid red;
+    border-right: 20px dotted red;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+.card::after {
+    content: '';
+    position: absolute;
+    border-top: 20px solid red;
+    border-left: 20px dotted red;
+    top: 0;
+    right: 0;
+}
+
